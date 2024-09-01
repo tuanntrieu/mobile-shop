@@ -25,9 +25,10 @@
                             <a class="border rounded py-1 px-3 nav-link d-flex align-items-center" target="_blank"> <i
                                     class="fas fa-shopping-cart m-1 me-md-2"></i>
                                 <p class="d-none d-md-block mb-0">Giỏ hàng</p></a>
-                            <a class="me-1 border rounded py-1 px-3 nav-link d-flex align-items-center" target="_blank">
+                            <a class="me-1 border rounded py-1 px-3 nav-link d-flex align-items-center" style= "cursor: pointer;" data-mdb-toggle="modal" data-mdb-target="#login-modal">
                                 <i class="fas fa-user-alt m-1 me-md-2"></i>
-                                <p class="d-none d-md-block mb-0">Đăng nhập</p></a>
+                                <p class="d-none d-md-block mb-0">Đăng nhập</p>
+                            </a>
                         </div>
                     </div>
                     <!-- Center elements -->
@@ -72,7 +73,8 @@
                     <!-- Left links -->
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link text-secondary text-uppercase fw-bold" aria-current="page" th:href="@{/}">Trang chủ</a>
+                            <a class="nav-link text-secondary text-uppercase fw-bold" aria-current="page"
+                               th:href="@{/}">Trang chủ</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-secondary text-uppercase fw-bold" href="#">Về chúng tôi</a>
