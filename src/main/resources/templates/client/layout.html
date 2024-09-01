@@ -21,15 +21,15 @@
 
 <body>
 <div th:replace="client/fragments/header:: header"></div>
+<div th:replace="client/fragments/login-modal :: login-modal"></div>
 
 <main class="main">
-
     <div layout:fragment="content"></div>
-
 </main>
 <script th:src="@{https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js}"></script>
 <script th:src="@{/lib/jquery/jquery.min.js}"></script>
-<script th:src="@{/lib/mdb/mdb.min.js}"></script>
+
+<script type="text/javascript" th:src="@{https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.js}"></script>
 <script th:src="@{/client/js/main.js}"></script>
 
 
