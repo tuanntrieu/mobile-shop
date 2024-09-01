@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{client/layout.html}">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang chủ</title>
+</head>
+<body>
+<div layout:fragment="content" class="container">
+    <div class="row mt-3">
+        <!-- Menu dọc -->
+        <div class="col-md-3 d-none d-md-block">
+            <div class="category-menu-container">
+                <div class="category-menu-title bg-primary text-white"><i class="fas fa-bars"></i> Danh mục sản phẩm
+                </div>
+                <ul class="category-menu">
+                    <li><a href="#"><i class="fas fa-mobile"></i>Iphone</a></li>
+                    <li><a href="#"><i class="fas fa-mobile"></i>SamSung</a></li>
+                    <li><a href="#"><i class="fas fa-mobile"></i>Oppo</a></li>
+                    <li><a href="#">Another category</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-9">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img th:src="@{/client/img/banner/banner1.webp}"></div>
+                    <div class="swiper-slide"><img th:src="@{/client/img/banner/banner2.webp}"></div>
+                    <div class="swiper-slide"><img th:src="@{/client/img/banner/banner3.webp}"></div>
+                    <div class="swiper-slide"><img th:src="@{/client/img/banner/banner4.webp}"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

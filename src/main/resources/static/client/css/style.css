@@ -1,0 +1,127 @@
+.icon-hover-primary:hover {
+    border-color: #3b71ca !important;
+    background-color: white !important;
+}
+
+.icon-hover-primary:hover i {
+    color: #3b71ca !important;
+}
+
+.icon-hover-danger:hover {
+    border-color: #dc4c64 !important;
+    background-color: white !important;
+}
+
+.icon-hover-danger:hover i {
+    color: #dc4c64 !important;
+}
+
+/*Header*/
+.menu .nav-link {
+    position: relative;
+    display: inline-block;
+}
+
+.menu .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #007bff;
+    transition: width 0.4s ease;
+    -webkit-transition: width 0.4s ease;
+}
+
+.menu .nav-link:hover::after {
+    width: 100%;
+}
+
+/*Header*/
+
+/*Category*/
+
+.category-menu-container {
+    width: 80%;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.category-menu-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    padding:5px 10px 5px 10px;
+}
+.category-menu-title i{
+    margin-right: 5px;
+}
+
+.category-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 200px;
+}
+
+.category-menu li {
+    width: 100%;
+    margin: 5px 0;
+}
+
+.category-menu a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+    border-radius: 5px;
+}
+
+.category-menu a:hover {
+    background-color: #e0e0e0;
+}
+
+.category-menu a i {
+    margin-right: 10px;
+}
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #000;
+}
+/*Category*/
+/*slide*/
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+}
+.swiper-slide img{
+    width: 100%;
+}

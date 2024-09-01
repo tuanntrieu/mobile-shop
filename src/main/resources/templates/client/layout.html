@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" th:href="@{/client/img/icon/mobile.ico}">
+    <title layout:title-pattern="$CONTENT_TITLE - $LAYOUT_TITLE">
+        Mobile Shop</title>
+    <link  rel="stylesheet" th:href="@{/client/css/style.css}">
+    <link  rel="stylesheet" th:href="@{/lib/mdb/mdb.min.css}">
+
+    <link rel="stylesheet" th:href="@{https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css}" />
+    <link rel="stylesheet" th:href="@{https://use.fontawesome.com/releases/v5.11.2/css/all.css}" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" th:href="@{https://fonts.googleapis.com}">
+    <link rel="preconnect" th:href="@{https://fonts.gstatic.com}" crossorigin>
+    <link th:href="@{https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap}" rel="stylesheet">
+</head>
+
+<body>
+<div th:replace="client/fragments/header:: header"></div>
+
+<main class="main">
+
+    <div layout:fragment="content"></div>
+
+</main>
+<script th:src="@{https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js}"></script>
+<script th:src="@{/lib/jquery/jquery.min.js}"></script>
+<script th:src="@{/lib/mdb/mdb.min.js}"></script>
+<script th:src="@{/client/js/main.js}"></script>
+
+
+
+</body>
+
+</html>
